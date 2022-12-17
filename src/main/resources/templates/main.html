@@ -7,13 +7,8 @@
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-<div id="logo">
-    <img src="/logo.jpg">
-</div>
-<div id="menu">
-    <a href="/main" class="button">Strona Główna</a>
-    <a href="/contact" class="button">Kontakt</a>
-</div>
+<div th:replace="fragments.html :: logo"></div>
+<div th:replace="fragments.html :: menu"></div>
 <div id="content">
     <form method="post">
         <input type="text" name="pattern" placeholder="Szukaj" class="text-input">
