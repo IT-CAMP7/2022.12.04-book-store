@@ -8,10 +8,11 @@
     <script src="/validator.js"></script>
 </head>
 <body>
-<div th:replace="fragments.html :: logo"></div>
-<div th:replace="fragments.html :: menu"></div>
+<div th:replace="~{fragments.html :: logo}"></div>
+<div th:replace="~{fragments.html :: menu}"></div>
 <div id="content">
     <form method="post" id="form" onsubmit="return validateRegisterForm()">
+        <div id="info" th:text="${sessionObject.getInfo().orElse('')}"></div>
         <input type="text" placeholder="Imie" class="text-input" id="name" th:field="*{user.name}">
         <input type="text" placeholder="Nazwisko" class="text-input" id="surname" th:field="*{user.surname}">
         <input type="text" placeholder="Login" class="text-input" id="login" th:field="*{user.login}">

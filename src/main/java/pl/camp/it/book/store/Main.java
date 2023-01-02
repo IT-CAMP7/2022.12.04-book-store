@@ -2,6 +2,8 @@ package pl.camp.it.book.store;
 
 import pl.camp.it.book.store.model.User;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 public class Main {
@@ -21,5 +23,12 @@ public class Main {
                 "Malinowski", "wisiek123", "wiesiek123",
                 User.Role.ADMIN));
         System.out.println(user3.getName());
+
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "asdfg");
+
+        map.remove(3);
+
+        System.out.println(map);
     }
 }

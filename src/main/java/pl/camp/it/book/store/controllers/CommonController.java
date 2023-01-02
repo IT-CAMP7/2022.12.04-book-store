@@ -7,13 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import pl.camp.it.book.store.database.IBookDAO;
-import pl.camp.it.book.store.model.Book;
 import pl.camp.it.book.store.services.IBookService;
 import pl.camp.it.book.store.session.SessionObject;
-
-import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class CommonController {
@@ -32,7 +27,7 @@ public class CommonController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String main(Model model) {
         model.addAttribute("books", this.bookService.getBooks());
-        model.addAttribute("logged", this.sessionObject.isLogged());
+        model.addAttribute("sessionObject", this.sessionObject);
         return "main";
     }
 
@@ -44,7 +39,7 @@ public class CommonController {
 
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
     public String contact(Model model) {
-        model.addAttribute("logged", this.sessionObject.isLogged());
+        model.addAttribute("sessionObject", this.sessionObject);
         return "contact";
     }
 }

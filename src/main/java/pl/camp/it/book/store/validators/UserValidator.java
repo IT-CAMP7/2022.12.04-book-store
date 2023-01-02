@@ -12,34 +12,34 @@ public class UserValidator {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(login);
         if(!matcher.matches()) {
-            throw new UserValidationException();
+            throw new UserValidationException("Nieprawidłowy login");
         }
     }
 
     public static void validatePassword(String password) {
         String regex = "^[a-zA-Z0-9]{5,}$";
         if(!password.matches(regex)) {
-            throw new UserValidationException();
+            throw new UserValidationException("Nieprawidłowe hasło");
         }
     }
 
     public static void validateName(String name) {
         String regex = "^[A-Z]{1}[a-z]+$";
         if(!name.matches(regex)) {
-            throw new UserValidationException();
+            throw new UserValidationException("Nieprawidłowe imie");
         }
     }
 
     public static void validateSurname(String surname) {
         String regex = "^[A-Z]{1}[a-z]+(-[A-Z]{1}[a-z]+)?$";
         if(!surname.matches(regex)) {
-            throw new UserValidationException();
+            throw new UserValidationException("Nieprawidłowe nazwisko");
         }
     }
 
     public static void validatePasswordsEquality(String password1, String password2) {
         if(!password1.equals(password2)) {
-            throw new UserValidationException();
+            throw new UserValidationException("Nieprawidłowo powtórzone hasło");
         }
     }
 

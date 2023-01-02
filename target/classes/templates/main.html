@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-<div th:replace="fragments.html :: logo"></div>
-<div th:replace="fragments.html :: menu"></div>
+<div th:replace="~{fragments.html :: logo}"></div>
+<div th:replace="~{fragments.html :: menu}"></div>
 <div id="content">
     <form method="post">
         <input type="text" name="pattern" placeholder="Szukaj" class="text-input">
@@ -20,6 +20,9 @@
         <div th:text="'Cena: ' + ${book.price} + ' zł'" class="price"></div>
         <div th:text="'ISBN: ' + ${book.isbn}" class="isbn"></div>
         <div th:text="'Pozostało ' + ${book.quantity} + ' sztuk'" class="quantity"></div>
+        <a th:if="${sessionObject.isAdmin()}" th:href="@{/book/edit/{id}(id=${book.id})}" class="edit">Edytuj</a>
+        <a th:if="${!sessionObject.isLogged()}" href="/login" class="buy">Zaloguj aby kupić</a>
+        <a th:if="${sessionObject.isLogged()}" th:href="@{/cart/add/{id}(id=${book.id})}" class="buy">Dodaj do koszyka</a>
     </div>
 </div>
 </body>

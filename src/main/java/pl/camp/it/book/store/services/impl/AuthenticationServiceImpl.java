@@ -3,7 +3,7 @@ package pl.camp.it.book.store.services.impl;
 import jakarta.annotation.Resource;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import pl.camp.it.book.store.database.IUserDAO;
 import pl.camp.it.book.store.model.User;
 import pl.camp.it.book.store.services.IAuthenticationService;
@@ -11,7 +11,7 @@ import pl.camp.it.book.store.session.SessionObject;
 
 import java.util.Optional;
 
-@Component
+@Service
 public class AuthenticationServiceImpl implements IAuthenticationService {
 
     @Autowired
@@ -21,14 +21,16 @@ public class AuthenticationServiceImpl implements IAuthenticationService {
     SessionObject sessionObject;
 
     @Override
-    public boolean authenticate(String login, String password) {
+    public void authenticate(String login, String password) {
         Optional<User> userBox = this.userDAO.getUserByLogin(login);
-        if(userBox.isEmpty() || !userBox.get().getPassword().equals(DigestUtils.md5Hex(password))) {
-            return false;
+        if(userBox.isPresent() && userBox.get().getPassword().equals(DigestUtils.md5Hex(password))) {
+            this.sessionObject.setUser(
+                    new User.UserBuilder()
+                            .clone(userBox.get())
+                            .password(null)
+                            .build()
+            );
         }
-        userBox.get().setPassword(null);
-        this.sessionObject.setUser(userBox.get());
-        return true;
     }
 
     @Override
