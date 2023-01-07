@@ -61,3 +61,19 @@
     background-color: #e05d53;
     color: white;
 }
+
+#message {
+    border: 1px solid black;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    display: none;
+    width: 150px;
+    height: 100px;
+    background-color: #e05d53;
+    color: white;
+    font-size: 20px;
+    transition: display 2s;
+    -webkit-transition: display 2s;
+    -ms-transition: display 2s;
+}

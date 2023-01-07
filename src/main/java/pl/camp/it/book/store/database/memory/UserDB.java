@@ -3,7 +3,6 @@ package pl.camp.it.book.store.database.memory;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import pl.camp.it.book.store.database.sequence.IBookIdSequence;
 import pl.camp.it.book.store.database.sequence.IIdSequence;
 import pl.camp.it.book.store.database.IUserDAO;
 import pl.camp.it.book.store.database.sequence.IUserIdSequence;
@@ -16,7 +15,7 @@ import java.util.Optional;
 
 @Repository
 public class UserDB implements IUserDAO {
-    IIdSequence userIdSequence;
+    private final IIdSequence userIdSequence;
     private final List<User> users = new ArrayList<>();
 
     public UserDB(@Autowired IUserIdSequence userIdSequence) {

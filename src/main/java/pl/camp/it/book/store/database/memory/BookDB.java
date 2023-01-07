@@ -1,10 +1,8 @@
 package pl.camp.it.book.store.database.memory;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 import pl.camp.it.book.store.database.IBookDAO;
-import pl.camp.it.book.store.database.sequence.BookIdSequence;
 import pl.camp.it.book.store.database.sequence.IBookIdSequence;
 import pl.camp.it.book.store.database.sequence.IIdSequence;
 import pl.camp.it.book.store.model.Book;
@@ -16,7 +14,7 @@ import java.util.Optional;
 @Repository
 public class BookDB implements IBookDAO {
 
-    IIdSequence bookIdSequence;
+    private final IIdSequence bookIdSequence;
     private final List<Book> books = new ArrayList<>();
 
     public BookDB(@Autowired IBookIdSequence bookIdSequence) {

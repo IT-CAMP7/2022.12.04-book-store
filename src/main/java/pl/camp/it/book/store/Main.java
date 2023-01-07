@@ -1,34 +1,34 @@
 package pl.camp.it.book.store;
 
+import pl.camp.it.book.store.database.memory.OrderDAO;
+import pl.camp.it.book.store.model.Order;
 import pl.camp.it.book.store.model.User;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-        User user = new User(1, "Janusz", "Kowalski",
-                "janusz123", "janusz123", User.Role.ADMIN);
+        OrderDAO orderDAO = new OrderDAO();
+        Order order1 = new Order();
+        order1.setId(1);
+        order1.setDate(LocalDateTime.now());
 
-        Optional<User> userBox = Optional.of(user);
-        Optional<User> userBox2 = Optional.empty();
+        Order order2 = new Order();
+        order2.setId(2);
+        order2.setDate(LocalDateTime.now());
 
-        if(userBox.isPresent()) {
-            User user2 = userBox.get();
-        }
+        orderDAO.persistOrder(order1);
+        orderDAO.persistOrder(order2);
 
-        //userBox2.get();
-        User user3 = userBox2.orElse(new User(2, "Wiesiek",
-                "Malinowski", "wisiek123", "wiesiek123",
-                User.Role.ADMIN));
-        System.out.println(user3.getName());
+        Order order3 = new Order();
+        order3.setId(2);
+        order3.setDate(LocalDateTime.now());
 
-        Map<Integer, String> map = new HashMap<>();
-        map.put(1, "asdfg");
+        orderDAO.updateOrder(order3);
 
-        map.remove(3);
-
-        System.out.println(map);
+        System.out.println();
     }
 }

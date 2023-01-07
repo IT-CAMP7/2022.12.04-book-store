@@ -2,7 +2,6 @@ package pl.camp.it.book.store.session;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
-import pl.camp.it.book.store.model.Book;
 import pl.camp.it.book.store.model.OrderPosition;
 import pl.camp.it.book.store.model.User;
 

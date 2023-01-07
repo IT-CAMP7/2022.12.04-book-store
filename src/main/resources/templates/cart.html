@@ -5,6 +5,7 @@
     <title>IT Camp Book Store</title>
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="/cart.css">
+    <script src="/message.js"></script>
 </head>
 <body>
 <div th:replace="~{fragments.html :: logo}"></div>
@@ -35,6 +36,7 @@
             <div th:text="${#numbers.formatDecimal(sum,1,2)} + ' zł'" class="sum-price"></div>
             <div class="bin"></div>
         </div>
+        <a href="/order/confirm" class="button">Zamów</a>
     </th:block>
     <div th:if="${cart.size() == 0}">Koszyk jest pusty !!</div>
 </div>

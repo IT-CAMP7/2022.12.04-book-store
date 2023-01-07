@@ -4,6 +4,7 @@ import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.camp.it.book.store.database.IBookDAO;
+import pl.camp.it.book.store.exceptions.NotEnoughBookException;
 import pl.camp.it.book.store.model.Book;
 import pl.camp.it.book.store.model.OrderPosition;
 import pl.camp.it.book.store.services.ICartService;
@@ -29,10 +30,12 @@ public class CartServiceImpl implements ICartService {
         if(bookBox.isEmpty()) {
             return;
         }
-        if(cart.get(bookId) == null) {
+        if(cart.get(bookId) == null && bookBox.get().getQuantity() > 0) {
             cart.put(bookId, new OrderPosition(bookBox.get(), 1));
-        } else {
+        } else if(bookBox.get().getQuantity() > cart.get(bookId).getQuantity()) {
             cart.get(bookId).incrementQuantity();
+        } else {
+            throw new NotEnoughBookException();
         }
     }
 
