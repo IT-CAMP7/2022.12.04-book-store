@@ -1,8 +1,14 @@
 package pl.camp.it.book.store.model;
 
 public class OrderPosition {
+    private int id;
     private Book book;
     private int quantity;
+
+    public OrderPosition(int id, Book book, int quantity) {
+        this(book, quantity);
+        this.id = id;
+    }
 
     public OrderPosition(Book book, int quantity) {
         this.book = book;
@@ -10,6 +16,14 @@ public class OrderPosition {
     }
 
     public OrderPosition() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Book getBook() {

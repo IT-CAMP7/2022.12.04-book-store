@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-        OrderDAO orderDAO = new OrderDAO();
+        /*OrderDAO orderDAO = new OrderDAO();
         Order order1 = new Order();
         order1.setId(1);
         order1.setDate(LocalDateTime.now());
@@ -29,6 +29,9 @@ public class Main {
 
         orderDAO.updateOrder(order3);
 
-        System.out.println();
+        System.out.println();*/
+
+        User.Role role = User.Role.USER;
+        System.out.println(role.toString());
     }
 }

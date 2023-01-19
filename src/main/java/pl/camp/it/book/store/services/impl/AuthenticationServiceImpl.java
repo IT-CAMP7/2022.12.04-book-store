@@ -41,6 +41,7 @@ public class AuthenticationServiceImpl implements IAuthenticationService {
     @Override
     public void registerUser(User user) {
         user.setRole(User.Role.USER);
+        user.setPassword(DigestUtils.md5Hex(user.getPassword()));
         this.userDAO.persistUser(user);
     }
 }

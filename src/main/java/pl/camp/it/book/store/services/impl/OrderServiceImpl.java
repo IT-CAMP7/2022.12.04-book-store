@@ -3,6 +3,7 @@ package pl.camp.it.book.store.services.impl;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pl.camp.it.book.store.database.IBookDAO;
 import pl.camp.it.book.store.database.IOrderDAO;
 import pl.camp.it.book.store.exceptions.NotEnoughBookException;
 import pl.camp.it.book.store.model.Book;
@@ -29,6 +30,9 @@ public class OrderServiceImpl implements IOrderService {
     @Autowired
     IOrderDAO orderDAO;
 
+    @Autowired
+    IBookDAO bookDAO;
+
     @Override
     public void confirmOrder() {
         Collection<OrderPosition> orderPositions = this.sessionObject.getCart().values();
@@ -40,6 +44,7 @@ public class OrderServiceImpl implements IOrderService {
                 throw new NotEnoughBookException();
             }
             book.setQuantity(newBookQuantity);
+            this.bookDAO.updateBook(book);
         }
 
         Order order = new Order(this.sessionObject.getUser().getId(),

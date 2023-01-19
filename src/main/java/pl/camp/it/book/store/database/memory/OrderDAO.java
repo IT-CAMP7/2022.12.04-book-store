@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-@Repository
 public class OrderDAO implements IOrderDAO {
 
     @Autowired
@@ -38,13 +37,14 @@ public class OrderDAO implements IOrderDAO {
     }
 
     @Override
-    public List<Order> getOrdersByUserId(int userId) {
-        List<Order> result = new ArrayList<>();
+    public List<Order> getOrdersByUserId(final int userId) {
+        /*List<Order> result = new ArrayList<>();
         for(Order order : this.orders) {
             if(order.getUserId() == userId) {
                 result.add(order);
             }
         }
-        return result;
+        return result;*/
+        return this.orders.stream().filter(o -> o.getUserId() == userId).toList();
     }
 }

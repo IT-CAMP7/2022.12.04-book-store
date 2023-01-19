@@ -10,8 +10,8 @@ import pl.camp.it.book.store.model.Book;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
-@Repository
 public class BookDB implements IBookDAO {
 
     private final IIdSequence bookIdSequence;
@@ -62,16 +62,21 @@ public class BookDB implements IBookDAO {
 
     @Override
     public List<Book> getBooksByPattern(String pattern) {
-        List<Book> filteredBooks = new ArrayList<>();
+        //List<Book> filteredBooks = new ArrayList<>();
 
-        for(Book book : this.books) {
+        /*for(Book book : this.books) {
             if(book.getTitle().toLowerCase().contains(pattern.toLowerCase()) ||
                     book.getAuthor().toLowerCase().contains(pattern.toLowerCase())) {
                 filteredBooks.add(book);
             }
-        }
+        }*/
 
-        return filteredBooks;
+        //return filteredBooks;
+
+        return this.books.stream()
+                .filter(book -> book.getTitle().toLowerCase().contains(pattern.toLowerCase()) ||
+                                book.getAuthor().toLowerCase().contains(pattern.toLowerCase()))
+                .toList();
     }
 
     @Override
@@ -81,13 +86,14 @@ public class BookDB implements IBookDAO {
     }
 
     @Override
-    public Optional<Book> getBookById(int id) {
-        for(Book book : this.books) {
+    public Optional<Book> getBookById(final int id) {
+        /*for(Book book : this.books) {
             if(book.getId() == id) {
                 return Optional.of(book);
             }
         }
-        return Optional.empty();
+        return Optional.empty();*/
+        return this.books.stream().filter(book -> book.getId() == id).findFirst();
     }
 
     @Override

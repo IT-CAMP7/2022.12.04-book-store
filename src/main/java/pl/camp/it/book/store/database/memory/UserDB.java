@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
 public class UserDB implements IUserDAO {
     private final IIdSequence userIdSequence;
     private final List<User> users = new ArrayList<>();
@@ -25,20 +24,23 @@ public class UserDB implements IUserDAO {
                 "admin", "21232f297a57a5a743894a0e4a801fc3",
                 User.Role.ADMIN));
 
-        this.users.add(new User(this.userIdSequence.getId(), "Jan", "Kowalski",
+        this.users.add(new User(this.userIdSequence.getId(),
+                "Jan", "Kowalski",
                 "janek123", "8f6de86901ba906047425ff9f71550dd",
                 User.Role.USER));
     }
 
     @Override
-    public Optional<User> getUserByLogin(String login) {
-        for(User user : this.users) {
+    public Optional<User> getUserByLogin(final String login) {
+        /*for(User user : this.users) {
             if(user.getLogin().equals(login)) {
                 return Optional.of(user);
             }
         }
 
-        return Optional.empty();
+        return Optional.empty();*/
+
+        return this.users.stream().filter(u -> u.getLogin().equals(login)).findFirst();
     }
 
     @Override
