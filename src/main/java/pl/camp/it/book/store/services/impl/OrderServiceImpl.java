@@ -16,6 +16,7 @@ import pl.camp.it.book.store.session.SessionObject;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 
 @Service
@@ -47,8 +48,15 @@ public class OrderServiceImpl implements IOrderService {
             this.bookDAO.updateBook(book);
         }
 
-        Order order = new Order(this.sessionObject.getUser().getId(),
+        /*Order order = new Order(this.sessionObject.getUser().getId(),
                 new ArrayList<>(orderPositions),
+                LocalDateTime.now(),
+                Order.State.NEW,
+                this.cartService.calculateCartSum());*/
+
+        Order order = new Order(0,
+                this.sessionObject.getUser(),
+                new HashSet<>(orderPositions),
                 LocalDateTime.now(),
                 Order.State.NEW,
                 this.cartService.calculateCartSum());

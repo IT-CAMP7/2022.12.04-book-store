@@ -1,7 +1,14 @@
 package pl.camp.it.book.store.model;
 
+import jakarta.persistence.*;
+
+@Entity(name = "torderposition")
 public class OrderPosition {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @ManyToOne(fetch = FetchType.EAGER)
     private Book book;
     private int quantity;
 

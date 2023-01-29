@@ -45,6 +45,6 @@ public class OrderDAO implements IOrderDAO {
             }
         }
         return result;*/
-        return this.orders.stream().filter(o -> o.getUserId() == userId).toList();
+        return this.orders.stream().filter(o -> o.getUser().getId() == userId).toList();
     }
 }

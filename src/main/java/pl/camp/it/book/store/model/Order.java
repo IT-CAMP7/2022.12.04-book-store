@@ -1,23 +1,28 @@
 package pl.camp.it.book.store.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 
+@Entity(name = "torder")
 public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int userId;
-    private List<OrderPosition> positions;
+    @ManyToOne(fetch = FetchType.EAGER)
+    private User user;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Set<OrderPosition> positions;
     private LocalDateTime date;
+    @Enumerated(EnumType.STRING)
     private State state;
     private double total;
 
-    public Order(int id, int userId, List<OrderPosition> positions, LocalDateTime date, State state, double total) {
-        this(userId, positions, date, state, total);
+    public Order(int id, User user, Set<OrderPosition> positions, LocalDateTime date, State state, double total) {
         this.id = id;
-    }
-
-    public Order(int userId, List<OrderPosition> positions, LocalDateTime date, State state, double total) {
-        this.userId = userId;
+        this.user = user;
         this.positions = positions;
         this.date = date;
         this.state = state;
@@ -35,19 +40,19 @@ public class Order {
         this.id = id;
     }
 
-    public int getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public List<OrderPosition> getPositions() {
+    public Set<OrderPosition> getPositions() {
         return positions;
     }
 
-    public void setPositions(List<OrderPosition> positions) {
+    public void setPositions(Set<OrderPosition> positions) {
         this.positions = positions;
     }
 
