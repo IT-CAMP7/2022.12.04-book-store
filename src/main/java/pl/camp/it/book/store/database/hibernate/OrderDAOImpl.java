@@ -1,5 +1,6 @@
 package pl.camp.it.book.store.database.hibernate;
 
+import jakarta.persistence.NoResultException;
 import jdk.jshell.spi.ExecutionControl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -8,7 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pl.camp.it.book.store.database.IOrderDAO;
 import pl.camp.it.book.store.model.Order;
+import pl.camp.it.book.store.model.User;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -21,6 +25,9 @@ public class OrderDAOImpl implements IOrderDAO {
         Session session = this.sessionFactory.openSession();
         session.beginTransaction();
         session.persist(order);
+        session.refresh(order.getUser());
+        order.getUser().getOrders().add(order);
+        session.merge(order.getUser());
         session.getTransaction().commit();
         session.close();
     }
@@ -32,13 +39,26 @@ public class OrderDAOImpl implements IOrderDAO {
 
     @Override
     public List<Order> getOrdersByUserId(int userId) {
-        Session session = this.sessionFactory.openSession();
+        /*Session session = this.sessionFactory.openSession();
         Query<Order> query = session.createQuery(
                 "FROM pl.camp.it.book.store.model.Order WHERE user_id = :userId",
                 Order.class);
         query.setParameter("userId", userId);
         List<Order> orders = query.getResultList();
         session.close();
-        return orders;
+        return orders;*/
+
+        Session session = this.sessionFactory.openSession();
+        Query<User> query = session.createQuery(
+                "FROM pl.camp.it.book.store.model.User WHERE id = :id",
+                User.class);
+        query.setParameter("id", userId);
+        ArrayList<Order> result = new ArrayList<>();
+        try {
+            User user = query.getSingleResult();
+            result = new ArrayList<>(user.getOrders());
+        } catch (NoResultException e) {}
+        session.close();
+        return result;
     }
 }

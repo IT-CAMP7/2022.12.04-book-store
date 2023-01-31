@@ -13,10 +13,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class BookDAOImpl implements IBookDAO {
+public class BookDAOImpl extends EntityManager implements IBookDAO {
 
-    @Autowired
-    SessionFactory sessionFactory;
+    public BookDAOImpl(@Autowired SessionFactory sessionFactory) {
+        super(sessionFactory);
+    }
+
     @Override
     public List<Book> getBooks() {
         Session session = this.sessionFactory.openSession();
@@ -41,11 +43,7 @@ public class BookDAOImpl implements IBookDAO {
 
     @Override
     public void persistBook(Book book) {
-        Session session = this.sessionFactory.openSession();
-        session.beginTransaction();
-        session.persist(book);
-        session.getTransaction().commit();
-        session.close();
+        super.persist(book);
     }
 
     @Override
@@ -65,10 +63,6 @@ public class BookDAOImpl implements IBookDAO {
 
     @Override
     public void updateBook(Book book) {
-        Session session = this.sessionFactory.openSession();
-        session.beginTransaction();
-        session.merge(book);
-        session.getTransaction().commit();
-        session.close();
+        super.update(book);
     }
 }

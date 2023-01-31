@@ -3,7 +3,7 @@ package pl.camp.it.book.store.model;
 import jakarta.persistence.*;
 
 @Entity(name = "torderposition")
-public class OrderPosition {
+public class OrderPosition implements Saveable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

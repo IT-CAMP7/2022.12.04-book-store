@@ -12,10 +12,12 @@ import pl.camp.it.book.store.model.User;
 import java.util.Optional;
 
 @Repository
-public class UserDAOImpl implements IUserDAO {
+public class UserDAOImpl extends EntityManager implements IUserDAO {
 
-    @Autowired
-    SessionFactory sessionFactory;
+    public UserDAOImpl(@Autowired SessionFactory sessionFactory) {
+        super(sessionFactory);
+    }
+
     @Override
     public Optional<User> getUserByLogin(String login) {
         Session session = this.sessionFactory.openSession();
@@ -33,10 +35,6 @@ public class UserDAOImpl implements IUserDAO {
 
     @Override
     public void persistUser(User user) {
-        Session session = this.sessionFactory.openSession();
-        session.beginTransaction();
-        session.persist(user);
-        session.getTransaction().commit();
-        session.close();
+        super.persist(user);
     }
 }

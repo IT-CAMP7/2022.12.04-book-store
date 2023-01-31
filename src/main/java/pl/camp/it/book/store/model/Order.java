@@ -3,18 +3,19 @@ package pl.camp.it.book.store.model;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 @Entity(name = "torder")
-public class Order {
+public class Order implements Saveable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne(fetch = FetchType.EAGER)
     private User user;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<OrderPosition> positions;
+    private Set<OrderPosition> positions = new HashSet<>();
     private LocalDateTime date;
     @Enumerated(EnumType.STRING)
     private State state;

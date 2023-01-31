@@ -2,8 +2,11 @@ package pl.camp.it.book.store.model;
 
 import jakarta.persistence.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity(name = "tuser")
-public class User {
+public class User implements Saveable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -13,6 +16,8 @@ public class User {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    private Set<Order> orders = new HashSet<>();
 
     public User(int id, String name, String surname, String login, String password, Role role) {
         this.id = id;
@@ -72,6 +77,14 @@ public class User {
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
     }
 
     public enum Role {

@@ -14,6 +14,7 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
 
+        <!--mapping resource="Book.hbm.xml"/-->
         <mapping class="pl.camp.it.book.store.model.Book"/>
         <mapping class="pl.camp.it.book.store.model.Order"/>
         <mapping class="pl.camp.it.book.store.model.OrderPosition"/>
