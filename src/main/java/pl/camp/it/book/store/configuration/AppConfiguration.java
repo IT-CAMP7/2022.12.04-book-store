@@ -4,6 +4,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import pl.camp.it.book.store.database.IBookDAO;
 import pl.camp.it.book.store.database.memory.BookDB;
 import pl.camp.it.book.store.database.sequence.BookIdSequence;
@@ -15,6 +16,7 @@ import java.sql.SQLException;
 
 @Configuration
 @ComponentScan("pl.camp.it.book.store")
+@EnableScheduling
 public class AppConfiguration {
 
     @Bean

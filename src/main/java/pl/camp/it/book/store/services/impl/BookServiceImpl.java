@@ -32,6 +32,11 @@ public class BookServiceImpl implements IBookService {
     }
 
     @Override
+    public List<Book> getBooksByPattern(String pattern) {
+        return this.bookDAO.getBooksByPattern(pattern);
+    }
+
+    @Override
     public void persistBook(Book book) {
         this.bookDAO.persistBook(book);
     }

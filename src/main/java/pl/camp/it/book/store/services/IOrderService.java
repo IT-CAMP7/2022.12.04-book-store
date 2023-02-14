@@ -7,4 +7,7 @@ import java.util.List;
 public interface IOrderService {
     void confirmOrder();
     List<Order> getOrderForCurrentUser();
+
+    void persistOrder(Order order);
+    List<Order> getOrderByUserId(int userId);
 }

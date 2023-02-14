@@ -70,4 +70,19 @@ public class OrderServiceImpl implements IOrderService {
     public List<Order> getOrderForCurrentUser() {
         return this.orderDAO.getOrdersByUserId(this.sessionObject.getUser().getId());
     }
+
+    @Override
+    public void persistOrder(Order order) {
+        this.orderDAO.persistOrder(order);
+    }
+
+    @Override
+    public List<Order> getOrderByUserId(int userId) {
+        List<Order> ordersByUserId = this.orderDAO.getOrdersByUserId(userId);
+        ordersByUserId.stream().map(Order::getUser).forEach(u -> {
+            u.setOrders(null);
+            u.setPassword("*****");
+        });
+        return ordersByUserId;
+    }
 }

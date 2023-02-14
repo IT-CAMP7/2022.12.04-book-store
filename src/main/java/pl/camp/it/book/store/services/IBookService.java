@@ -7,6 +7,7 @@ import java.util.Optional;
 
 public interface IBookService {
     List<Book> getBooks();
+    List<Book> getBooksByPattern(String pattern);
     void persistBook(Book book);
 
     Optional<Book> getBookById(int id);
