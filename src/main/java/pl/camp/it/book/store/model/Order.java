@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -15,13 +16,13 @@ public class Order implements Saveable {
     @ManyToOne(fetch = FetchType.EAGER)
     private User user;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<OrderPosition> positions = new HashSet<>();
+    private List<OrderPosition> positions = new LinkedList<>();
     private LocalDateTime date;
     @Enumerated(EnumType.STRING)
     private State state;
     private double total;
 
-    public Order(int id, User user, Set<OrderPosition> positions, LocalDateTime date, State state, double total) {
+    public Order(int id, User user, List<OrderPosition> positions, LocalDateTime date, State state, double total) {
         this.id = id;
         this.user = user;
         this.positions = positions;
@@ -49,11 +50,11 @@ public class Order implements Saveable {
         this.user = user;
     }
 
-    public Set<OrderPosition> getPositions() {
+    public List<OrderPosition> getPositions() {
         return positions;
     }
 
-    public void setPositions(Set<OrderPosition> positions) {
+    public void setPositions(List<OrderPosition> positions) {
         this.positions = positions;
     }
 

@@ -1,5 +1,6 @@
 package pl.camp.it.book.store.database.memory;
 
+import jdk.jshell.spi.ExecutionControl;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -51,5 +52,15 @@ public class UserDB implements IUserDAO {
         user.setId(this.userIdSequence.getId());
         user.setPassword(DigestUtils.md5Hex(user.getPassword()));
         this.users.add(user);
+    }
+
+    @Override
+    public Optional<User> getUserById(int id) throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("Not implemented");
+    }
+
+    @Override
+    public void updateUser(User user) throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("Not implemented");
     }
 }

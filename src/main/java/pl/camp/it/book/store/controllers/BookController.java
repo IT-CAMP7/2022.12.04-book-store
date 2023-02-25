@@ -14,6 +14,7 @@ import pl.camp.it.book.store.services.IBookService;
 import pl.camp.it.book.store.session.SessionObject;
 import pl.camp.it.book.store.validators.BookValidator;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Optional;
 
 @Controller
@@ -33,7 +34,7 @@ public class BookController {
     }
 
     @RequestMapping(path = "/book/add", method = RequestMethod.POST)
-    public String addBook(@ModelAttribute Book book) {
+    public String addBook(@ModelAttribute Book book) throws SQLIntegrityConstraintViolationException {
         try {
             BookValidator.validateBook(book);
         } catch (BookValidationException e) {

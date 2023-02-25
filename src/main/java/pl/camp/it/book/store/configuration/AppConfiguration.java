@@ -5,14 +5,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import pl.camp.it.book.store.database.IBookDAO;
-import pl.camp.it.book.store.database.memory.BookDB;
-import pl.camp.it.book.store.database.sequence.BookIdSequence;
-import pl.camp.it.book.store.database.sequence.IBookIdSequence;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 @Configuration
 @ComponentScan("pl.camp.it.book.store")
@@ -46,5 +38,10 @@ public class AppConfiguration {
     @Bean
     public IBookIdSequence bookIdSequence() {
         return new BookIdSequence();
+    }*/
+
+    /*@Bean
+    public Docket docket() {
+        return new Docket(DocumentationType.SWAGGER_2).select().build();
     }*/
 }

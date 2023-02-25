@@ -1,14 +1,17 @@
 package pl.camp.it.book.store.database.memory;
 
+import jdk.jshell.spi.ExecutionControl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pl.camp.it.book.store.database.IOrderDAO;
 import pl.camp.it.book.store.database.sequence.IOrderIdSequence;
 import pl.camp.it.book.store.model.Order;
+import pl.camp.it.book.store.model.User;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
 public class OrderDAO implements IOrderDAO {
 
@@ -46,5 +49,10 @@ public class OrderDAO implements IOrderDAO {
         }
         return result;*/
         return this.orders.stream().filter(o -> o.getUser().getId() == userId).toList();
+    }
+
+    @Override
+    public Optional<Order> getOrderById(int id) {
+        return Optional.empty();
     }
 }

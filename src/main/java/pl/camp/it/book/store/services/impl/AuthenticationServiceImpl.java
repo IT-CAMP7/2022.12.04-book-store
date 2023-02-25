@@ -9,6 +9,7 @@ import pl.camp.it.book.store.model.User;
 import pl.camp.it.book.store.services.IAuthenticationService;
 import pl.camp.it.book.store.session.SessionObject;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Optional;
 
 @Service

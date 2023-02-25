@@ -2,6 +2,7 @@ package pl.camp.it.book.store.services;
 
 import pl.camp.it.book.store.model.Book;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 import java.util.Optional;
 

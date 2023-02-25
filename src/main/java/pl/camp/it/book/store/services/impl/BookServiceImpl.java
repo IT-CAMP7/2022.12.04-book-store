@@ -8,6 +8,7 @@ import pl.camp.it.book.store.model.Book;
 import pl.camp.it.book.store.services.IBookService;
 import pl.camp.it.book.store.session.SessionObject;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 import java.util.Optional;
 

@@ -1,5 +1,6 @@
 package pl.camp.it.book.store.database.jdbc;
 
+import jdk.jshell.spi.ExecutionControl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pl.camp.it.book.store.database.IUserDAO;
@@ -56,5 +57,15 @@ public class UserDAOImpl implements IUserDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    public Optional<User> getUserById(int id) throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("Not implemented");
+    }
+
+    @Override
+    public void updateUser(User user) throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("Not implemented");
     }
 }

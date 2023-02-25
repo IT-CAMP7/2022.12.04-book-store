@@ -11,9 +11,9 @@ import pl.camp.it.book.store.database.IOrderDAO;
 import pl.camp.it.book.store.model.Order;
 import pl.camp.it.book.store.model.User;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class OrderDAOImpl implements IOrderDAO {
@@ -57,6 +57,22 @@ public class OrderDAOImpl implements IOrderDAO {
         try {
             User user = query.getSingleResult();
             result = new ArrayList<>(user.getOrders());
+        } catch (NoResultException e) {}
+        session.close();
+        return result;
+    }
+
+    @Override
+    public Optional<Order> getOrderById(int id) {
+        Session session = this.sessionFactory.openSession();
+        Query<Order> query = session.createQuery(
+                "FROM pl.camp.it.book.store.model.Order WHERE id = :id",
+                Order.class
+        );
+        query.setParameter("id", id);
+        Optional<Order> result = Optional.empty();
+        try {
+            result = Optional.of(query.getSingleResult());
         } catch (NoResultException e) {}
         session.close();
         return result;

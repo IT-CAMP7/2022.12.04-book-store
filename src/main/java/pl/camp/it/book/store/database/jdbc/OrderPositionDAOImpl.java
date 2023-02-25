@@ -60,4 +60,9 @@ public class OrderPositionDAOImpl implements IOrderPositionDAO {
         }
         return result;
     }
+
+    @Override
+    public Optional<OrderPosition> getOrderPositionById(int id) {
+        return Optional.empty();
+    }
 }

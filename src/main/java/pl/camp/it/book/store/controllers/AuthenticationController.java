@@ -15,6 +15,8 @@ import pl.camp.it.book.store.services.IAuthenticationService;
 import pl.camp.it.book.store.session.SessionObject;
 import pl.camp.it.book.store.validators.UserValidator;
 
+import java.sql.SQLIntegrityConstraintViolationException;
+
 @Controller
 public class AuthenticationController {
     @Autowired

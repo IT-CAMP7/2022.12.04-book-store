@@ -3,6 +3,7 @@ package pl.camp.it.book.store;
 import pl.camp.it.book.store.database.memory.OrderDAO;
 import pl.camp.it.book.store.model.Order;
 import pl.camp.it.book.store.model.User;
+import pl.camp.it.book.store.model.dto.SaveOrderRequest;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -33,5 +34,8 @@ public class Main {
 
         User.Role role = User.Role.USER;
         System.out.println(role.toString());
+
+        SaveOrderRequest saveOrderRequest = new SaveOrderRequest();
+        SaveOrderRequest.OrderPosition op = new SaveOrderRequest.OrderPosition();
     }
 }

@@ -8,6 +8,7 @@ import pl.camp.it.book.store.model.Book;
 import pl.camp.it.book.store.model.dto.BooksDTO;
 import pl.camp.it.book.store.services.IBookService;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Optional;
 
 @RestController
@@ -29,7 +30,7 @@ public class RestApiBookController {
     }
 
     @RequestMapping(path = "", method = RequestMethod.POST)
-    public ResponseEntity<Book> saveBook(@RequestBody Book book) {
+    public ResponseEntity<Book> saveBook(@RequestBody Book book) throws SQLIntegrityConstraintViolationException {
         this.bookService.persistBook(book);
         return ResponseEntity.status(HttpStatus.CREATED).body(book);
     }

@@ -7,10 +7,12 @@ import pl.camp.it.book.store.database.IOrderDAO;
 import pl.camp.it.book.store.database.IOrderPositionDAO;
 import pl.camp.it.book.store.model.Order;
 import pl.camp.it.book.store.model.OrderPosition;
+import pl.camp.it.book.store.model.User;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class OrderDAOImpl implements IOrderDAO {
 
@@ -73,5 +75,10 @@ public class OrderDAOImpl implements IOrderDAO {
             throw new RuntimeException(e);
         }
         return result;
+    }
+
+    @Override
+    public Optional<Order> getOrderById(int id) {
+        return Optional.empty();
     }
 }
