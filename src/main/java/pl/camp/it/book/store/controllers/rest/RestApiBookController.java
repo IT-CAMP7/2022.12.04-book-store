@@ -1,5 +1,7 @@
 package pl.camp.it.book.store.controllers.rest;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +20,12 @@ public class RestApiBookController {
     @Autowired
     IBookService bookService;
 
+    @ApiOperation(value = "Get Books", notes = "Return all books or books matching to pattern")
     @RequestMapping(path = "", method = RequestMethod.GET)
-    public BooksDTO getBooks(@RequestParam(required = false) String pattern) {
+    public BooksDTO getBooks(
+            @ApiParam(value = "Pattern to find in title or author", example = "Java")
+            @RequestParam(required = false)
+            String pattern) {
         BooksDTO response = new BooksDTO();
         if(pattern == null) {
             response.getBooks().addAll(this.bookService.getBooks());

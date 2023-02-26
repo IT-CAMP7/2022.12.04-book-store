@@ -1,6 +1,5 @@
 package pl.camp.it.book.store.controllers;
 
-import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +13,7 @@ import pl.camp.it.book.store.services.IBookService;
 import pl.camp.it.book.store.session.SessionObject;
 import pl.camp.it.book.store.validators.BookValidator;
 
+import javax.annotation.Resource;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Optional;
 

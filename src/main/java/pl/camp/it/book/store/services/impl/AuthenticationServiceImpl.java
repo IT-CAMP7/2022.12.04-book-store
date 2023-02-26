@@ -1,6 +1,5 @@
 package pl.camp.it.book.store.services.impl;
 
-import jakarta.annotation.Resource;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,6 +8,7 @@ import pl.camp.it.book.store.model.User;
 import pl.camp.it.book.store.services.IAuthenticationService;
 import pl.camp.it.book.store.session.SessionObject;
 
+import javax.annotation.Resource;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Optional;
 

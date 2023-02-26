@@ -1,6 +1,9 @@
 package pl.camp.it.book.store.model;
 
-import jakarta.persistence.*;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+import javax.persistence.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -19,7 +22,7 @@ public class User implements Saveable {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
-    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+    @Transient
     private List<Order> orders = new ArrayList<>();
 
     public User(int id, String name, String surname, String login, String password, Role role) {

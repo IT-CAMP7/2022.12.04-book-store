@@ -1,6 +1,6 @@
 package pl.camp.it.book.store.services.impl;
 
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.camp.it.book.store.database.IBookDAO;

@@ -1,6 +1,6 @@
 package pl.camp.it.book.store.database.hibernate;
 
-import jakarta.persistence.NoResultException;
+
 import jdk.jshell.spi.ExecutionControl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -8,10 +8,9 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pl.camp.it.book.store.database.IUserDAO;
-import pl.camp.it.book.store.exceptions.UserLoginExistException;
 import pl.camp.it.book.store.model.User;
 
-import java.sql.SQLIntegrityConstraintViolationException;
+import javax.persistence.NoResultException;
 import java.util.Optional;
 
 @Repository

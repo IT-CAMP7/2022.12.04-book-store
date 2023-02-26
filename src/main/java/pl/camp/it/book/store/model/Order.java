@@ -1,6 +1,9 @@
 package pl.camp.it.book.store.model;
 
-import jakarta.persistence.*;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+import javax.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;

@@ -1,6 +1,6 @@
 package pl.camp.it.book.store.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity(name = "torderposition")
 public class OrderPosition implements Saveable {

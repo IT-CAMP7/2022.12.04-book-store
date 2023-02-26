@@ -1,6 +1,5 @@
 package pl.camp.it.book.store.services.impl;
 
-import jakarta.persistence.NoResultException;
 import jdk.jshell.spi.ExecutionControl;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.hibernate.Session;
@@ -14,6 +13,7 @@ import pl.camp.it.book.store.model.User;
 import pl.camp.it.book.store.model.dto.UserDTO;
 import pl.camp.it.book.store.services.IUserService;
 
+import javax.persistence.NoResultException;
 import java.util.Optional;
 
 @Service

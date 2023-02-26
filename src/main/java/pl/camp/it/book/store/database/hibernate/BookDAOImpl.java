@@ -1,6 +1,5 @@
 package pl.camp.it.book.store.database.hibernate;
 
-import jakarta.persistence.NoResultException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -9,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import pl.camp.it.book.store.database.IBookDAO;
 import pl.camp.it.book.store.model.Book;
 
+import javax.persistence.NoResultException;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 import java.util.Optional;

@@ -1,7 +1,5 @@
 package pl.camp.it.book.store.model.dto;
 
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import pl.camp.it.book.store.model.Order;
 
 import java.time.LocalDateTime;

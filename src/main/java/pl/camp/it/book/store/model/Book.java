@@ -1,9 +1,7 @@
 package pl.camp.it.book.store.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
+import javax.persistence.*;
 
 @Entity(name = "tbook")
 public class Book implements Saveable {

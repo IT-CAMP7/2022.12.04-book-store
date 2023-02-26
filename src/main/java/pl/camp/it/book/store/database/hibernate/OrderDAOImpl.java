@@ -1,6 +1,5 @@
 package pl.camp.it.book.store.database.hibernate;
 
-import jakarta.persistence.NoResultException;
 import jdk.jshell.spi.ExecutionControl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -11,6 +10,7 @@ import pl.camp.it.book.store.database.IOrderDAO;
 import pl.camp.it.book.store.model.Order;
 import pl.camp.it.book.store.model.User;
 
+import javax.persistence.NoResultException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
