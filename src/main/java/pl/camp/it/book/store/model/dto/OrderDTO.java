@@ -1,5 +1,7 @@
 package pl.camp.it.book.store.model.dto;
 
+import lombok.Getter;
+import lombok.Setter;
 import pl.camp.it.book.store.model.Order;
 import pl.camp.it.book.store.model.OrderPosition;
 
@@ -7,6 +9,8 @@ import java.time.LocalDateTime;
 import java.util.LinkedList;
 import java.util.List;
 
+@Getter
+@Setter
 public class OrderDTO {
     private int id;
     private String user;
@@ -23,55 +27,7 @@ public class OrderDTO {
         this.total = order.getTotal();
         for (OrderPosition orderPosition : order.getPositions()) {
             this.positions.add("http://localhost:8085/api/v1/orderposition/"
-                            + orderPosition.getId());
+                    + orderPosition.getId());
         }
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public List<String> getPositions() {
-        return positions;
-    }
-
-    public void setPositions(List<String> positions) {
-        this.positions = positions;
-    }
-
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDateTime date) {
-        this.date = date;
-    }
-
-    public Order.State getState() {
-        return state;
-    }
-
-    public void setState(Order.State state) {
-        this.state = state;
-    }
-
-    public double getTotal() {
-        return total;
-    }
-
-    public void setTotal(double total) {
-        this.total = total;
     }
 }

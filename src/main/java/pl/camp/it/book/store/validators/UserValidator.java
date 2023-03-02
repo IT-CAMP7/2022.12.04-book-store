@@ -1,19 +1,23 @@
 package pl.camp.it.book.store.validators;
 
+import lombok.extern.log4j.Log4j2;
 import pl.camp.it.book.store.exceptions.UserValidationException;
 import pl.camp.it.book.store.model.User;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@Log4j2
 public class UserValidator {
     public static void validateLogin(String login) {
         String regex = "^[a-zA-Z0-9]{5,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(login);
         if(!matcher.matches()) {
+            log.info(login + " validation error");
             throw new UserValidationException("Nieprawidłowy login");
         }
+        log.info(login + " validation OK");
     }
 
     public static void validatePassword(String password) {

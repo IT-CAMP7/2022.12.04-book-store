@@ -1,6 +1,7 @@
 package pl.camp.it.book.store.controllers;
 
 import jakarta.annotation.Resource;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,7 @@ import pl.camp.it.book.store.validators.UserValidator;
 import java.sql.SQLIntegrityConstraintViolationException;
 
 @Controller
+@Log4j2
 public class AuthenticationController {
     @Autowired
     IAuthenticationService authenticationService;
@@ -27,12 +29,14 @@ public class AuthenticationController {
 
     @RequestMapping(path = "/login", method = RequestMethod.GET)
     public String login(Model model) {
+        log.info("Request - /login address - method GET");
         model.addAttribute("sessionObject", this.sessionObject);
         return "login";
     }
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public String login(@RequestParam String login, @RequestParam String password) {
+        log.info("Login: " + login + " Pass: " + password);
         try {
             UserValidator.validateLogin(login);
             UserValidator.validatePassword(password);

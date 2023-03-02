@@ -1,5 +1,7 @@
 package pl.camp.it.book.store.session;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
 import pl.camp.it.book.store.model.OrderPosition;
@@ -11,6 +13,8 @@ import java.util.Optional;
 
 @Component
 @SessionScope
+@Getter
+@Setter
 public class SessionObject {
     private User user = null;
     private Optional<String> pattern = Optional.empty();
@@ -20,14 +24,6 @@ public class SessionObject {
 
     public boolean isLogged() {
         return this.user != null;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public Optional<String> getPattern() {
@@ -47,14 +43,6 @@ public class SessionObject {
         }
         this.info = null;
         return result;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
-
-    public Map<Integer, OrderPosition> getCart() {
-        return cart;
     }
 
     public boolean isAdmin() {
