@@ -1,0 +1,8 @@
+pl\camp\it\book\store\validators\UserValidatorTest.class
+pl\camp\it\book\store\model\dto\UserResponseDTOTest.class
+pl\camp\it\book\store\validators\BookValidatorTest.class
+pl\camp\it\book\store\model\OrderPositionTest.class
+pl\camp\it\book\store\model\dto\OrderPositionDTOTest.class
+pl\camp\it\book\store\model\UserTest.class
+pl\camp\it\book\store\session\SessionObjectTest.class
+pl\camp\it\book\store\model\dto\OrderDTOTest.class

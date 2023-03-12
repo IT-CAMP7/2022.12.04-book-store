@@ -21,7 +21,9 @@ public class OrderDTO {
 
     public OrderDTO(Order order) {
         this.id = order.getId();
-        this.user = "http://localhost:8085/api/v1/user/" + order.getUser().getId();
+        if(order.getUser() != null) {
+            this.user = "http://localhost:8085/api/v1/user/" + order.getUser().getId();
+        }
         this.state = order.getState();
         this.date = order.getDate();
         this.total = order.getTotal();

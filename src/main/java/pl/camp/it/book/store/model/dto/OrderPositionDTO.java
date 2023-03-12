@@ -13,7 +13,9 @@ public class OrderPositionDTO {
 
     public OrderPositionDTO(OrderPosition orderPosition) {
         this.id = orderPosition.getId();
-        this.book = "http://localhost:8085/api/v1/book/" + orderPosition.getBook().getId();
+        if(orderPosition.getBook() != null) {
+            this.book = "http://localhost:8085/api/v1/book/" + orderPosition.getBook().getId();
+        }
         this.quantity = orderPosition.getQuantity();
     }
 }
