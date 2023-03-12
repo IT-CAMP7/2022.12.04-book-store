@@ -7,6 +7,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Log4j2
+//@Component
 public class StringCronGenerator {
 
     //public static final Logger log = LogManager.getLogger(StringCronGenerator.class);

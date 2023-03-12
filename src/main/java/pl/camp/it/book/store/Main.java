@@ -1,5 +1,6 @@
 package pl.camp.it.book.store;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import pl.camp.it.book.store.database.memory.OrderDAO;
 import pl.camp.it.book.store.model.FakeModel;
 import pl.camp.it.book.store.model.Order;
@@ -39,7 +40,7 @@ public class Main {
         SaveOrderRequest saveOrderRequest = new SaveOrderRequest();
         SaveOrderRequest.OrderPosition op = new SaveOrderRequest.OrderPosition();*/
 
-        FakeModel fakeModel = new FakeModel(1, "asdf", "asdf");
+        /*FakeModel fakeModel = new FakeModel(1, "asdf", "asdf");
         System.out.println(fakeModel.id());
         System.out.println(fakeModel.cos());
         System.out.println(fakeModel.cos2());
@@ -58,6 +59,8 @@ public class Main {
         System.out.println(fakeModel3);
 
         FakeModel fakeModel4 = new FakeModel();
-        fakeModel4.id(15).cos("cos tam").cos2("Cos innego");
+        fakeModel4.id(15).cos("cos tam").cos2("Cos innego");*/
+
+        System.out.println(DigestUtils.md5Hex("testPassword"));
     }
 }

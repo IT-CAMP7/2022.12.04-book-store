@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pl.camp.it.book.store.database.IUserDAO;
 import pl.camp.it.book.store.model.User;
+import pl.camp.it.book.store.model.dto.UserDTO;
 
 import java.sql.*;
 import java.util.Optional;
@@ -66,6 +67,11 @@ public class UserDAOImpl implements IUserDAO {
 
     @Override
     public void updateUser(User user) throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("Not implemented");
+    }
+
+    @Override
+    public User updateUser(UserDTO userDTO, int id) throws ExecutionControl.NotImplementedException {
         throw new ExecutionControl.NotImplementedException("Not implemented");
     }
 }

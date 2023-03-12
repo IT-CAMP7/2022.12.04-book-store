@@ -22,9 +22,6 @@ public class UserServiceImpl implements IUserService {
     @Autowired
     IUserDAO userDAO;
 
-    @Autowired
-    SessionFactory sessionFactory;
-
     @Override
     public Optional<User> getUserByLogin(String login) {
         return this.userDAO.getUserByLogin(login);
@@ -49,32 +46,6 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User updateUser(UserDTO userDTO, int id) throws ExecutionControl.NotImplementedException {
-        Session session = this.sessionFactory.openSession();
-        Query<User> query = session.createQuery(
-                "FROM pl.camp.it.book.store.model.User WHERE id = :id",
-                User.class
-        );
-        query.setParameter("id", id);
-        User user = null;
-        try {
-            user = query.getSingleResult();
-        } catch (NoResultException e) {
-            session.close();
-            throw new UserNotExistException();
-        }
-        user.setRole(userDTO.getRole());
-        user.setName(userDTO.getName());
-        user.setSurname(userDTO.getSurname());
-        user.setLogin(userDTO.getLogin());
-        user.setPassword(DigestUtils.md5Hex(userDTO.getPassword()));
-
-        session.beginTransaction();
-        session.merge(user);
-        session.getTransaction().commit();
-        session.close();
-
-        user.getOrders().forEach(order -> order.setUser(null));
-
-        return user;
+        return this.userDAO.updateUser(userDTO, id);
     }
 }
