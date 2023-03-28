@@ -32,7 +32,8 @@ public class CartServiceImpl implements ICartService {
         }
         if(cart.get(bookId) == null && bookBox.get().getQuantity() > 0) {
             cart.put(bookId, new OrderPosition(bookBox.get(), 1));
-        } else if(bookBox.get().getQuantity() > cart.get(bookId).getQuantity()) {
+        } else if(cart.get(bookId) != null &&
+                bookBox.get().getQuantity() > cart.get(bookId).getQuantity()) {
             cart.get(bookId).incrementQuantity();
         } else {
             throw new NotEnoughBookException();

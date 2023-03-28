@@ -1,0 +1,219 @@
+2023-03-18 10:09:42 DEBUG - Using ContextCustomizers for test class [OrderServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 10:09:42 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 10:09:42 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 10:09:42 DEBUG - Using TestExecutionListeners for test class [OrderServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 10:09:42 DEBUG - Before test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:42 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:42 DEBUG - Activating profiles []
+2023-03-18 10:09:42 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 10:09:42 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1536602f
+2023-03-18 10:09:42 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 10:09:42 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 10:09:42 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 10:09:43 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@2b7e8044]
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 10:09:43 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 10:09:43 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:43 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:43 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@999b951 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 10:09:43 DEBUG - After test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:43 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@1536602f, started on Sat Mar 18 10:09:42 CET 2023
+2023-03-18 10:09:53 DEBUG - Using ContextCustomizers for test class [OrderServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 10:09:53 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 10:09:53 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 10:09:53 DEBUG - Using TestExecutionListeners for test class [OrderServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 10:09:53 DEBUG - Before test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:53 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:53 DEBUG - Activating profiles []
+2023-03-18 10:09:53 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 10:09:53 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7813cb11
+2023-03-18 10:09:53 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 10:09:53 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 10:09:53 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 10:09:54 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@205df5dc]
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 10:09:54 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 10:09:54 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:54 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:09:54 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 10:09:54 DEBUG - After test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:09:54 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@7813cb11, started on Sat Mar 18 10:09:53 CET 2023
+2023-03-18 10:10:04 DEBUG - Using ContextCustomizers for test class [OrderServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 10:10:05 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 10:10:05 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 10:10:05 DEBUG - Using TestExecutionListeners for test class [OrderServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 10:10:05 DEBUG - Before test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:10:05 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:10:05 DEBUG - Activating profiles []
+2023-03-18 10:10:05 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 10:10:05 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7813cb11
+2023-03-18 10:10:05 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 10:10:05 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 10:10:05 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 10:10:06 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@205df5dc]
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 10:10:06 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 10:10:06 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:10:06 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 10:10:06 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@3a3ed300 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 10:10:06 DEBUG - After test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 10:10:06 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@7813cb11, started on Sat Mar 18 10:10:05 CET 2023

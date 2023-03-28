@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="/main.css">
     <script src="/message.js"></script>
+    <script src="/jquery-3.6.4.min.js"></script>
 </head>
 <body>
 <div th:replace="~{fragments.html :: logo}"></div>
@@ -22,8 +23,8 @@
         <div th:text="'ISBN: ' + ${book.isbn}" class="isbn"></div>
         <div th:text="'Pozostało ' + ${book.quantity} + ' sztuk'" class="quantity"></div>
         <a th:if="${sessionObject.isAdmin()}" th:href="@{/book/edit/{id}(id=${book.id})}" class="edit">Edytuj</a>
-        <a th:if="${!sessionObject.isLogged()}" href="/login" class="buy">Zaloguj aby kupić</a>
-        <a th:if="${sessionObject.isLogged()}" th:href="@{/cart/add/{id}(id=${book.id})}" class="buy">Dodaj do koszyka</a>
+        <a th:if="${!sessionObject.isLogged()}" href="/login" class="login">Zaloguj aby kupić</a>
+        <div th:if="${sessionObject.isLogged()}" class="buy" th:onclick="|addToCart('${book.id}');|">Dodaj do koszyka</div>
     </div>
 </div>
 </body>

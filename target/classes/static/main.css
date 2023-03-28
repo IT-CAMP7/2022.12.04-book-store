@@ -15,8 +15,15 @@
     font-size: 24px;
 }
 
-.price, .quantity, .isbn, .edit, .buy {
+.price, .quantity, .isbn, .edit, .login, .buy {
     display: inline-block;
     margin-right: 40px;
     font-size: 19px;
+}
+
+.buy {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
 }

@@ -1,0 +1,887 @@
+2023-03-18 12:23:15 DEBUG - Using ContextCustomizers for test class [OrderServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 12:23:15 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 12:23:15 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 12:23:15 DEBUG - Using TestExecutionListeners for test class [OrderServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 12:23:15 DEBUG - Before test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:15 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:15 DEBUG - Activating profiles []
+2023-03-18 12:23:15 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 12:23:15 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@fd0e5b6
+2023-03-18 12:23:15 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 12:23:15 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 12:23:15 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 12:23:16 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@314b9e4b]
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 12:23:16 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 30, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 31, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 32, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 33, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 34, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 35, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 36, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 37, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 38, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 39, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 40, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 41, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 42, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 43, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 44, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 45, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 46, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 47, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 48, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 49, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 50, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 51, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 52, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 53, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 54, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 55, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 56, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 57, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 58, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 59, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 60, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 61, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 62, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 63, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 64, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 65, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 66, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 67, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 68, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 69, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 70, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 71, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 72, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 73, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 74, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 75, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 76, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 77, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 78, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 79, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 80, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 81, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 82, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 83, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 84, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 85, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 86, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 87, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 88, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 89, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 90, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 91, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 92, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 93, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 94, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 95, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 96, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 97, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 98, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 99, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 100, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 101, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 102, missCount = 1]
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 103, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:16 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@fa5f81c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 104, missCount = 1]
+2023-03-18 12:23:16 DEBUG - After test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:16 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@fd0e5b6, started on Sat Mar 18 12:23:15 CET 2023
+2023-03-18 12:23:34 DEBUG - Using ContextCustomizers for test class [OrderServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 12:23:34 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 12:23:34 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 12:23:34 DEBUG - Using TestExecutionListeners for test class [OrderServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 12:23:34 DEBUG - Before test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:34 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:35 DEBUG - Activating profiles []
+2023-03-18 12:23:35 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 12:23:35 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@180e6ac4
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 12:23:35 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 12:23:35 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@208f0007]
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 12:23:35 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 12:23:36 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 30, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 31, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 32, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 33, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 34, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 35, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 36, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 37, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 38, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 39, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 40, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 41, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 42, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 43, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 44, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 45, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 46, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 47, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 48, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 49, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 50, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 51, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 52, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 53, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 54, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 55, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 56, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 57, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 58, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 59, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 60, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 61, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 62, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 63, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 64, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 65, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 66, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 67, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 68, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 69, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 70, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 71, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 72, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 73, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 74, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 75, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 76, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 77, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 78, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 79, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 80, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 81, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 82, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 83, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 84, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 85, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 86, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 87, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 88, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 89, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 90, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 91, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 92, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 93, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 94, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 95, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 96, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 97, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 98, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 99, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 100, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 101, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 102, missCount = 1]
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 103, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:36 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 104, missCount = 1]
+2023-03-18 12:23:36 DEBUG - After test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:36 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@180e6ac4, started on Sat Mar 18 12:23:35 CET 2023
+2023-03-18 12:23:46 DEBUG - Using ContextCustomizers for test class [OrderServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 12:23:46 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 12:23:46 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 12:23:46 DEBUG - Using TestExecutionListeners for test class [OrderServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 12:23:46 DEBUG - Before test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:46 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:46 DEBUG - Activating profiles []
+2023-03-18 12:23:46 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 12:23:46 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@180e6ac4
+2023-03-18 12:23:46 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 12:23:46 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 12:23:46 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 12:23:47 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@208f0007]
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 12:23:47 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 30, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 31, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 32, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 33, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 34, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 35, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 36, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 37, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 38, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 39, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 40, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 41, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 42, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 43, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 44, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 45, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 46, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 47, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 48, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 49, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 50, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 51, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 52, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 53, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 54, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 55, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 56, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 57, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 58, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 59, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 60, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 61, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 62, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 63, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 64, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 65, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 66, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 67, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 68, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 69, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 70, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 71, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 72, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 73, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 74, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 75, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 76, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 77, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 78, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 79, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 80, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 81, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 82, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 83, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 84, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 85, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 86, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 87, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 88, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 89, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 90, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 91, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 92, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 93, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 94, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 95, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 96, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 97, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 98, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 99, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 100, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 101, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 102, missCount = 1]
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 103, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:23:47 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@5ec1963c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 104, missCount = 1]
+2023-03-18 12:23:47 DEBUG - After test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:23:47 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@180e6ac4, started on Sat Mar 18 12:23:46 CET 2023
+2023-03-18 12:28:29 DEBUG - Using ContextCustomizers for test class [OrderServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 12:28:29 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 12:28:29 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 12:28:29 DEBUG - Using TestExecutionListeners for test class [OrderServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 12:28:29 DEBUG - Before test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:29 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:29 DEBUG - Activating profiles []
+2023-03-18 12:28:29 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 12:28:29 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e985ce9
+2023-03-18 12:28:29 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 12:28:29 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 12:28:29 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 12:28:30 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@39c96e48]
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 12:28:30 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderWhenNotEnoughBookInStoreTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenUserNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 30, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 31, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 32, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 33, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 34, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 35, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 36, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 37, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 38, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 39, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 40, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 41, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 42, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 43, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 44, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 45, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 46, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 47, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 48, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 49, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 50, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 51, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestWhenBookNotExistTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 52, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 53, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 54, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 55, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 56, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 57, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 58, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 59, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 60, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 61, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 62, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 63, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 64, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [confirmOrderTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 65, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 66, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 67, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 68, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 69, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 70, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 71, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 72, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 73, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 74, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 75, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 76, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 77, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderForCurrentUserTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 78, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 79, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 80, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 81, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 82, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 83, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 84, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 85, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 86, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 87, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 88, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 89, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 90, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderByUserIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 91, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 92, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 93, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 94, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 95, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 96, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 97, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 98, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 99, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 100, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 101, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 102, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 103, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [persistOrderRequestTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 104, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 105, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 106, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 107, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Before test method: class [OrderServiceImplTest], method [getOrderByIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 108, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 109, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 110, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 111, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 112, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 113, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 114, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 115, missCount = 1]
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 116, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test method: class [OrderServiceImplTest], method [getOrderByIdTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.OrderServiceImplTest
+2023-03-18 12:28:30 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@6af90849 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 117, missCount = 1]
+2023-03-18 12:28:30 DEBUG - After test class: class [OrderServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:28:30 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@7e985ce9, started on Sat Mar 18 12:28:29 CET 2023
+2023-03-18 12:32:49 DEBUG - Using ContextCustomizers for test class [UserServiceImplTest]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, MockServerContainerContextCustomizer]
+2023-03-18 12:32:49 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2023-03-18 12:32:49 DEBUG - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-18 12:32:49 DEBUG - Using TestExecutionListeners for test class [UserServiceImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+2023-03-18 12:32:49 DEBUG - Before test class: class [UserServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:32:49 DEBUG - Loading WebApplicationContext for test class pl.camp.it.book.store.services.impl.UserServiceImplTest
+2023-03-18 12:32:49 DEBUG - Activating profiles []
+2023-03-18 12:32:49 DEBUG - Registering annotated classes: [class pl.camp.it.book.store.configuration.TestConfiguration]
+2023-03-18 12:32:49 DEBUG - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5bf22f18
+2023-03-18 12:32:49 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\AuthenticationController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\BookController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CartController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\CommonController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\OrderController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiBookController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiOrderPositionController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\controllers\rest\RestApiUserController.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\AuthenticationServiceImpl.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\BookServiceImpl.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\CartServiceImpl.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderPositionServiceImpl.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\OrderServiceImpl.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\services\impl\UserServiceImpl.class]
+2023-03-18 12:32:49 DEBUG - Identified candidate component class: file [E:\IT-CAMP7\2022.12.04-book-store\book-store\target\classes\pl\camp\it\book\store\session\SessionObject.class]
+2023-03-18 12:32:49 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'org.springframework.scheduling.annotation.SchedulingConfiguration'
+2023-03-18 12:32:50 DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@2721044]
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'testConfiguration'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'authenticationController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'sessionObject'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'authenticationServiceImpl'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'bookController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'bookServiceImpl'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'cartController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'cartServiceImpl'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'commonController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'orderController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'orderServiceImpl'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'restApiBookController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'restApiOrderController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'restApiOrderPositionController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'orderPositionServiceImpl'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'restApiUserController'
+2023-03-18 12:32:50 DEBUG - Creating shared instance of singleton bean 'userServiceImpl'
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class pl.camp.it.book.store.services.impl.UserServiceImplTest
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Performing dependency injection for test class pl.camp.it.book.store.services.impl.UserServiceImplTest
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Before test method: class [UserServiceImplTest], method [getUserByLoginTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-18 12:32:50 DEBUG - After test method: class [UserServiceImplTest], method [getUserByLoginTest], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:32:50 DEBUG - Resetting RequestContextHolder for test class pl.camp.it.book.store.services.impl.UserServiceImplTest
+2023-03-18 12:32:50 DEBUG - Spring test ApplicationContext cache statistics: [DefaultContextCache@69d3cf7e size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-18 12:32:50 DEBUG - After test class: class [UserServiceImplTest], class annotated with @DirtiesContext [false] with mode [null]
+2023-03-18 12:32:50 DEBUG - Closing org.springframework.web.context.support.GenericWebApplicationContext@5bf22f18, started on Sat Mar 18 12:32:49 CET 2023

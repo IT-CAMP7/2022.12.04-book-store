@@ -1,0 +1,32 @@
+2023-03-19 10:10:09 DEBUG - Start expire sessions StandardManager at 1679217009517 sessioncount 1
+2023-03-19 10:10:09 DEBUG - End expire sessions StandardManager processingTime 7 expired sessions: 0
+2023-03-19 10:10:12 DEBUG - Processing socket [org.apache.tomcat.util.net.NioChannel@7947dcee:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61671]] with status [ERROR]
+2023-03-19 10:10:12 DEBUG - Processing socket [org.apache.tomcat.util.net.NioChannel@44aa30c:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61670]] with status [ERROR]
+2023-03-19 10:10:12 DEBUG - Found processor [null] for socket [org.apache.tomcat.util.net.NioChannel@7947dcee:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61671]]
+2023-03-19 10:10:12 DEBUG - Found processor [null] for socket [org.apache.tomcat.util.net.NioChannel@44aa30c:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61670]]
+2023-03-19 10:10:12 DEBUG - Counting down[http-nio-8085-exec-1] latch=2
+2023-03-19 10:10:12 DEBUG - Counting down[http-nio-8085-exec-2] latch=3
+2023-03-19 10:10:12 DEBUG - Calling [org.apache.tomcat.util.net.NioEndpoint@1e2e0654].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@73bfb79e:org.apache.tomcat.util.net.NioChannel@7947dcee:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61671]])
+2023-03-19 10:10:12 DEBUG - Calling [org.apache.tomcat.util.net.NioEndpoint@1e2e0654].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@47a140da:org.apache.tomcat.util.net.NioChannel@44aa30c:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61670]])
+2023-03-19 10:10:16 DEBUG - Processing socket [org.apache.tomcat.util.net.NioChannel@24c8be4d:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61669]] with status [ERROR]
+2023-03-19 10:10:16 DEBUG - Found processor [null] for socket [org.apache.tomcat.util.net.NioChannel@24c8be4d:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61669]]
+2023-03-19 10:10:16 DEBUG - Counting down[http-nio-8085-exec-3] latch=1
+2023-03-19 10:10:16 DEBUG - Calling [org.apache.tomcat.util.net.NioEndpoint@1e2e0654].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@2e30d53d:org.apache.tomcat.util.net.NioChannel@24c8be4d:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8085 remote=/127.0.0.1:61669]])
+2023-03-19 10:11:09 DEBUG - Start expire sessions StandardManager at 1679217069576 sessioncount 1
+2023-03-19 10:11:09 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:12:09 DEBUG - Start expire sessions StandardManager at 1679217129623 sessioncount 1
+2023-03-19 10:12:09 DEBUG - End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-03-19 10:13:09 DEBUG - Start expire sessions StandardManager at 1679217189678 sessioncount 1
+2023-03-19 10:13:09 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:14:09 DEBUG - Start expire sessions StandardManager at 1679217249709 sessioncount 1
+2023-03-19 10:14:09 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:15:09 DEBUG - Start expire sessions StandardManager at 1679217309766 sessioncount 1
+2023-03-19 10:15:09 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:16:09 DEBUG - Start expire sessions StandardManager at 1679217369806 sessioncount 1
+2023-03-19 10:16:09 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:17:09 DEBUG - Start expire sessions StandardManager at 1679217429867 sessioncount 1
+2023-03-19 10:17:09 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:18:09 DEBUG - Start expire sessions StandardManager at 1679217489916 sessioncount 1
+2023-03-19 10:18:09 DEBUG - End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-03-19 10:19:09 DEBUG - Start expire sessions StandardManager at 1679217549951 sessioncount 1
+2023-03-19 10:19:09 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0

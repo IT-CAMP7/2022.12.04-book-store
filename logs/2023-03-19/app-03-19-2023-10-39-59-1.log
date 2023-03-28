@@ -1,0 +1,20 @@
+2023-03-19 10:30:10 DEBUG - Start expire sessions StandardManager at 1679218210475 sessioncount 1
+2023-03-19 10:30:10 DEBUG - End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-03-19 10:31:10 DEBUG - Start expire sessions StandardManager at 1679218270512 sessioncount 1
+2023-03-19 10:31:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:32:10 DEBUG - Start expire sessions StandardManager at 1679218330579 sessioncount 1
+2023-03-19 10:32:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:33:10 DEBUG - Start expire sessions StandardManager at 1679218390626 sessioncount 1
+2023-03-19 10:33:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:34:10 DEBUG - Start expire sessions StandardManager at 1679218450680 sessioncount 1
+2023-03-19 10:34:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:35:10 DEBUG - Start expire sessions StandardManager at 1679218510727 sessioncount 1
+2023-03-19 10:35:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:36:10 DEBUG - Start expire sessions StandardManager at 1679218570779 sessioncount 1
+2023-03-19 10:36:10 DEBUG - End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-03-19 10:37:10 DEBUG - Start expire sessions StandardManager at 1679218630817 sessioncount 1
+2023-03-19 10:37:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:38:10 DEBUG - Start expire sessions StandardManager at 1679218690870 sessioncount 1
+2023-03-19 10:38:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-03-19 10:39:10 DEBUG - Start expire sessions StandardManager at 1679218750936 sessioncount 1
+2023-03-19 10:39:10 DEBUG - End expire sessions StandardManager processingTime 0 expired sessions: 0

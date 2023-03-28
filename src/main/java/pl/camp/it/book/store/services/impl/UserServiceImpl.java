@@ -29,6 +29,9 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User persistUser(UserDTO userDTO) {
+        if(userDTO == null) {
+            return null;
+        }
         User user = new User();
         user.setLogin(userDTO.getLogin());
         user.setPassword(DigestUtils.md5Hex(userDTO.getPassword()));
